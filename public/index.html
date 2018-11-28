@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>MushCron</title>
+  </head>
+  <body ng-app="mushApp" ng-controller="mushCtrl">
+    
+    <div class="container">
+      <div class="row">
+        <h1>Controls</h1>
+        <hr/>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-1 col-md-3">
+          
+          <div class="card">
+            <div class="card-header">
+              <h3>Intake Fan</h3>
+            </div>
+            <div class="card-body">
+              <h4>Mode</h4>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="intakeMode" id="intakeModeAuto" value="auto" ng-model="intakeMode" ng-click="changeMode(0)">
+                <label class="form-check-label" for="intakeModeAuto">Auto</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="intakeMode" id="intakeModManual" value="manual" ng-model="intakeMode" ng-click="changeMode(0)"> 
+                <label class="form-check-label" for="all-systems">Manual</label>
+              </div>
+            <h4>State</h4>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="intakeState" id="intakeStateOn" value="On" ng-model="intakeState" ng-click="changeState(0)">
+                  <label class="form-check-label" for="intakeStateOn">On</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="intakeState" id="intakeStateOff" value="Off" ng-model="intakeState" ng-click="changeState(0)"> 
+                  <label class="form-check-label" for="intakeStateOff">Off</label>
+                </div>      
+            </div>          
+          </div>
+          
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="mush-app.js"></script>
+    <script src="mush-controllers.js"></script>
+    <script src="mush-services.js"></script>
+  </body>
+</html>
